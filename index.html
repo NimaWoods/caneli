@@ -305,6 +305,36 @@
                 margin: 5px 10px;
             }
         }
+    .form-input {
+        width: 100%;
+        padding: 14px 18px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.05);
+        color: var(--light-text);
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-input:focus {
+        outline: none;
+        border-color: var(--turquoise);
+        box-shadow: 0 0 8px rgba(0, 184, 196, 0.5);
+        background-color: rgba(255,255,255,0.07);
+    }
+
+    textarea.form-input {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .contact-form {
+        background: var(--dark-card);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
     </style>
 </head>
 <body>
